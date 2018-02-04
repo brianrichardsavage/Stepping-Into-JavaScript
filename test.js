@@ -6,6 +6,11 @@ function getAverage(a,b){
   return average;
 }
 
-var myResult = getAverage(7,8,9);
-console.log("the avarage is " + myResult);
+var myResult = getAverage(7,8,9); //global variable
+
+function logResult(){
+  console.log("the avarage is " + myResult + " inside the function");
+}
+
+logResult();
 
